@@ -1,0 +1,44 @@
+/*.dual-password-form .pass-label input {
+    float:right;
+    margin-left:1em;
+}
+
+.dual-password-form {
+    width:fit-content;
+}
+
+.dual-password-form input[type="submit"] {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+*/
+.media-delivery-img-list {
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+
+.media-delivery-img-list li.media-delivery-img {
+  margin: 0 1em 1em 0;
+}
+
+
+.media-delivery-img-list li {
+  width: 80px;
+  float: left;
+  cursor: move;
+  border: 1px solid #d5d5d5;
+  margin: 3px 9px 0 0;
+  background: #f7f7f7;
+  border-radius: 2px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.media-delivery-img-list li img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

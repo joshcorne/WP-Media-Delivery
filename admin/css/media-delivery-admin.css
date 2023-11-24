@@ -1,0 +1,152 @@
+.mode-grid .attachments-browser .media-toolbar-primary {
+	height:auto;
+}
+
+.media-frame.mode-grid .media-toolbar {
+	max-height: 4em;
+}
+
+#media-delivery-email-color-preview {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-right: 3px;
+	float: left;
+	border-radius: 3px;
+	border: 1px solid #8c8f94;
+}
+
+.media-delivery-email-content {
+	background-color: white;
+}
+
+input[type="text"].media-delivery-email-option:not(.color-picker) {
+	width: 16em;
+}
+
+body.post-type-customer_media {
+	& .postbox .notice {
+		padding: 5px 12px
+	}
+
+	& #poststuff .postbox#publish-media-box .inside {
+		padding: 0;
+	}
+
+	& #poststuff .postbox .inside select, #poststuff .postbox .inside select {
+		width: 100%;
+	}
+
+	& #delete-pub-action {
+		float: left;
+	}
+	
+	& #post-body-content {
+		margin-bottom: 0;
+	}
+
+	& .postbox#meta-fields-meta-box input.meta-field {
+		display: block;
+		width: 100%;
+	}
+	
+	& .button-container {
+		clear:both;
+	}
+
+	& .vid-container #video-loading.spinner {
+		margin: 4px 0px 4px;
+		visibility: unset;
+		float: left;
+
+		&.hidden {
+			display: none;
+		}
+	}
+
+	& .imgs-container {
+
+		& .img-list {
+			margin: 0;
+
+			& li:last-child {
+				margin-bottom: 1em;
+			}
+		}
+
+		& li.image {
+			width: 80px;
+			float: left;
+			cursor: move;
+			border: 1px solid #d5d5d5;
+			margin: 3px 9px 0 0;
+			background: #f7f7f7;
+			border-radius: 2px;
+			position: relative;
+			box-sizing: border-box;
+		}
+
+		& li.image img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		& li.image:hover ul.actions {
+			display: block;
+		}
+
+		& ul.actions li {
+			float: right;
+			margin: 0 0 0 2px;
+		}
+
+		& ul.actions {
+			position: absolute;
+			top: -8px;
+			right: -8px;
+			padding: 2px;
+			display: none;
+		}
+
+		& ul.actions li a.delete-img {
+			display: block;
+			text-indent: -9999px;
+			position: relative;
+			height: 1em;
+			width: 1em;
+			font-size: 1.4em;
+		}
+
+		& ul ul.actions li {
+			& a.delete-img::before {
+				font-family: Dashicons;
+				speak: never;
+				font-weight: 400;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				margin: 0;
+				text-indent: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				content: "\f153";
+				color: #999;
+				background: #fff;
+				border-radius: 50%;
+				height: 1em;
+				width: 1em;
+				line-height: 1em;
+			}
+
+			& a.delete-img:hover::before {
+				color:#a00;
+			}
+		}
+	}
+}
